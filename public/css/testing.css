@@ -1,0 +1,123 @@
+/* body { */
+/* background-color: lavender; */
+/* background-image: url('../img/sunlight.jpg'); */
+/* } */
+#app {
+    width: 80%;
+    margin: auto;
+    background-color: lavender;
+    background-image: url("../img/earth.gif");
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    background-attachment: scroll;
+    /* background-repeat: repeat-x; */
+
+    /* background: #ffffff url("../img/earth.gif") no-repeat fixed right top;*/
+    margin-bottom: 64px;
+    padding: 5%;
+
+    /* browser default size */
+    font-size: 100%;
+}
+h1 {
+    color: red;
+}
+h1.viewport {
+    font-size: 3vw;
+}
+
+h1.uppercase {
+    text-transform: uppercase;
+}
+
+h1.lowercase {
+    text-transform: lowercase;
+}
+
+h1.capitalize {
+    text-transform: capitalize;
+}
+.shadow {
+    text-shadow: 2px 2px green;
+}
+/* Use the "Georgia" font for headings, and "Verdana" for text: */
+h2 {
+    background-color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+    color: gray;
+}
+p.font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p.lorem {
+    font-family: sans-serif, Arial, Helvetica, Verdana, Tahoma;
+    text-indent: 30px;
+    letter-spacing: 1.2px;
+    /* browser default size */
+    font-size: 1em;
+}
+p.normal {
+    /* font-variant: normal; */
+    /* browser default size x 2 */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2em;
+}
+
+.outline {
+    background-color: whitesmoke;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid green;
+    /* outline: 8em solid lightgrey; */
+
+    outline: 8px solid lightgrey;
+    outline-offset: 9em;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+.icon {
+    color: darkorange;
+}
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+/* a:link {
+    text-decoration: none;
+    background-color: linen;
+    padding: 8px;
+}
+
+a:hover {
+    color: green;
+    border: 1px solid green;
+}
+
+a:before {
+    color: darkred;
+} */

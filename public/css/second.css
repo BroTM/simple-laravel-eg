@@ -1,0 +1,475 @@
+.app {
+    width: 80%;
+    margin: auto;
+    /* background-color: lavender; */
+}
+
+.a {
+    list-style-type: circle;
+    /* list-style-image: url('sunlight.jpg'); */
+    list-style-position: inside;
+}
+.b li {
+    /* list-style-type: square; */
+    display: inline;
+    margin-left: 100px;
+}
+
+.c {
+    list-style-type: upper-roman;
+}
+.d {
+    list-style-type: lower-greek;
+}
+.e {
+    list-style-type: none;
+    border: 1px solid #ddd;
+    padding: 0;
+}
+
+.e li {
+    border-bottom: 1px solid #ddd;
+    padding: 1vw 1vw;
+}
+
+.e li:last-child {
+    border-bottom: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th,
+td {
+    padding: 1vw 2vw;
+}
+tr:hover {
+    background-color: aquamarine;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+caption {
+    caption-side: bottom;
+}
+.imgbox {
+    /* float: left; */
+    display: inline-block;
+    width: 30%;
+    height: 13vw;
+    padding: 8px;
+    border: 1px solid limegreen;
+    text-align: center;
+    margin: 8px;
+}
+
+button {
+    width: 100%;
+}
+
+div.ex1 {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid red;
+    display: block;
+}
+
+div.ex2 {
+    width: 500px;
+    margin: auto;
+    border: 1px solid red;
+    display: block;
+}
+
+div.static {
+    position: static;
+    border: 1px solid blue;
+}
+
+div.relative {
+    position: relative;
+    /* top: 100px; */
+    /* left: 100px; */
+    right: 100px;
+    bottom: 100px;
+    border: 1px solid green;
+}
+
+div.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: 1px solid yellow;
+}
+
+/* note: A "positioned" element is one whose position is anything except static. */
+
+div.absolute {
+    position: absolute;
+    right: 100px;
+    bottom: 200px;
+    border: 1px solid darkgoldenrod;
+}
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    border: 1px solid darkgreen;
+    background-color: darkgrey;
+}
+
+.overlap {
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+}
+
+.img-txt {
+    opacity: 0.3;
+}
+
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+/* overflow eg */
+
+div.overflow-eg .scroll {
+    margin-top: 40px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+}
+
+div.overflow-eg .hidden {
+    margin-top: 40px;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+}
+
+div.overflow-eg .auto {
+    margin-top: 40px;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+}
+
+div.overflow-eg .visible {
+    margin-top: 40px;
+    width: 50%;
+    height: 100px;
+    border: 1px solid #aaaa;
+    overflow: visible;
+}
+
+/* float example */
+.float p img.right {
+    float: right;
+}
+
+.float p img.left {
+    float: left;
+}
+
+.float-all {
+    float: right;
+}
+
+.float-all .div1 {
+    background: red;
+}
+
+.float-all .div2 {
+    background: green;
+}
+
+.float-all .div3 {
+    background: yellow;
+}
+/* clear and clearfix */
+/* clear */
+.clear-and-clearfix .div1 {
+    float: left;
+    border: 1px solid red;
+    width: 100px;
+    height: 70px;
+}
+
+.clear-and-clearfix .div2 {
+    border: 1px solid green;
+}
+
+.clear-and-clearfix .div3 {
+    float: left;
+    border: 1px solid yellow;
+    width: 100px;
+    height: 70px;
+}
+
+.clear-and-clearfix .div4 {
+    clear: left;
+    border: 1px solid red;
+}
+/* clear fix */
+
+.clear-and-clearfix .clear-problem .img1 {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.clear-and-clearfix .clear-problem {
+    border: 1px solid red;
+}
+
+/* you can solve the problem with over-flow or ::after
+most website use the ::after
+*/
+.clear-and-clearfix .clear-fix {
+    /* overflow: auto; */
+    border: 1px solid red;
+}
+
+.clear-and-clearfix .clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clear-and-clearfix .clear-fix .img2 {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.grid-box {
+    box-sizing: border-box;
+}
+
+.grid-box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box {
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+/* css combinators decendant selector */
+/* div p {
+  background-color: yellow;
+} */
+
+/* child selector */
+
+.descendant p {
+    background: red;
+}
+
+.child > p {
+    background: green;
+}
+
+.adjacent-slibing + p {
+    background: yellow;
+}
+
+.general-slibing ~ p {
+    background: blue;
+}
+
+/* pseudo class */
+
+.pseudo-class a:link {
+    color: #ff0000;
+}
+
+.pseudo-class a:visited {
+    color: #00ff00;
+}
+
+.pseudo-class a:hover {
+    color: #ff00ff;
+}
+
+.pseudo-class a:active {
+    color: #0000ff;
+}
+.hover-me p {
+    display: none;
+    background: red;
+    padding: 20px;
+}
+
+.hover-me:hover p {
+    display: block;
+}
+
+div.pseudo p:first-child {
+    color: red;
+}
+
+div.pseudo p i:first-child {
+    color: blue;
+}
+/* pseudo lang */
+
+q:lang(no) {
+    /* quotes: '\00AB' '\00BB' '\201E' '\201C'; */
+    quotes: "~""~";
+}
+
+.form-control {
+    height: 32px;
+    border: 0.5px solid #ddd;
+    padding: 0 8px;
+    display: block;
+}
+
+.form-control:focus {
+    border: none;
+    outline: 2px solid lightblue;
+}
+
+/* select all checked input element */
+
+input:checked {
+    width: 100px;
+    height: 100px;
+}
+
+.pseudo-disabled:disabled {
+    background: green;
+}
+
+/* pseudo empty */
+
+.pseudo-empty p:empty {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+/* first of type */
+/*  :last-of-type  */
+/* Specify a background color for the first <p> element of its parent: */
+
+.pseudo-empty p:first-of-type {
+    background-color: blue;
+}
+
+/* :in-range */
+
+.pseudo-in-range input:in-range {
+    border: 1px solid yellow;
+}
+
+/* :invalid */
+/* uch as input elements with min and max attributes, email fields without a legal email,
+ or number fields without a numeric value, etc. */
+
+.pseudo-invalid input:invalid {
+    border: 1px solid red;
+}
+
+/* :not(p) */
+
+.pseudo-not :not(h1) {
+    background-color: pink;
+}
+
+/* :nth-child(n) & :nth-last-child(n) */
+
+.nth ul li:nth-child(2) {
+    background-color: red;
+}
+/* p:nth-last-of-type(2) */
+.nth ul li:nth-last-child(2) {
+    background-color: blue;
+}
+
+/* Specify a background color for every <p> element that is the only child of its type, of its parent: */
+
+.only-one-p p:only-of-type {
+    background-color: red;
+}
+
+/* optional */
+
+.only-one-p input:optional {
+    background-color: red;
+}
+
+.att input[type="number"]:out-of-range {
+    border: 1px solid red;
+}
+
+.att input:read-only {
+    border: 1px solid blue;
+}
+
+/* normal input */
+.att input:read-write {
+    outline: 2px solid green;
+}
+
+.normal-required input:required {
+    background-color: yellow;
+}
+
+/* pseudo target */
+
+.pseudo-target :target {
+    border: 2px solid #d4d4d4;
+    background-color: #e5eecc;
+}
+
+
+/* pseudo element */
+
+.pseudo-element p::first-line{
+    font-variant: small-caps;
+    color: blue;
+}
+
+.pseudo-element p::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+
+.pseudo-element h1::before {
+    content: url('../img/smiley.png');
+}
+
+.pseudo-element h1::after {
+    content: url('../img/smiley.png');
+}
+
+.pseudo-element ::marker {
+    color: red;
+    font-size: x-large;
+}
+
